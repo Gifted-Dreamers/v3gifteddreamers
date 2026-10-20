@@ -6,6 +6,7 @@ import Breadcrumbs from './components/Breadcrumbs';
 import CookieConsent from './components/CookieConsent';
 import { trackPageView } from './lib/analytics';
 import { loadAnalytics, hasConsent } from './lib/analytics-loader';
+import routeMeta from './lib/route-meta.json';
 
 // Lazy load all pages for code splitting
 const Home = lazy(() => import('./pages/Home'));
@@ -44,10 +45,22 @@ const pageTitles: Record<string, string> = {
   '/terms': 'Terms of Service',
 };
 
+// Keep head tags in sync on client-side navigation (prerendered HTML sets them on first load)
+const setHeadForRoute = (pathname: string) => {
+  const meta = (routeMeta as Record<string, { title: string; description: string }>)[pathname];
+  if (!meta) return;
+  const url = `https://gifteddreamers.org${pathname}`;
+  document.title = meta.title;
+  document.querySelector('meta[name="description"]')?.setAttribute('content', meta.description);
+  document.querySelector('link[rel="canonical"]')?.setAttribute('href', url);
+  document.querySelector('meta[property="og:url"]')?.setAttribute('content', url);
+};
+
 const ScrollToTop = () => {
   const { pathname } = useLocation();
   React.useEffect(() => {
     window.scrollTo(0, 0);
+    setHeadForRoute(pathname);
     // Track page view for GA4
     const pageTitle = pageTitles[pathname] || 'Gifted Dreamers';
     trackPageView(pathname, pageTitle);

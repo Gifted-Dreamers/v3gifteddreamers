@@ -1,0 +1,50 @@
+{
+  "/": {
+    "title": "Gifted Dreamers | $380K in Free Nonprofit Tech Tools",
+    "description": "We help nonprofits and startups access $380K+ in free tools from Google, Microsoft, Salesforce and 200+ companies, plus accounting cleanup."
+  },
+  "/services": {
+    "title": "Services: Tech Perks, Accounting Cleanup & Automation | Gifted Dreamers",
+    "description": "Tech perks audits, accounting cleanup, and workflow automation for nonprofits and startups, at prices that make sense."
+  },
+  "/contact": {
+    "title": "Contact | Gifted Dreamers",
+    "description": "Get in touch with Gifted Dreamers about tech perks, accounting cleanup, workflow automation, volunteering, or partnerships."
+  },
+  "/volunteer": {
+    "title": "Get Paid to Volunteer | Gifted Dreamers",
+    "description": "Your employer may donate when you volunteer with Gifted Dreamers and give you paid time off to do it. Learn skills, help community."
+  },
+  "/gruhp": {
+    "title": "GRUHP Mutual Aid Fund | Gifted Dreamers",
+    "description": "Groceries, Rent, Utilities, Health Care, Pets. 100% of GRUHP donations go directly to community members in crisis."
+  },
+  "/faq": {
+    "title": "FAQ | Gifted Dreamers",
+    "description": "Answers to common questions about Gifted Dreamers, free nonprofit tech perks, our services, pricing, and how donations are used."
+  },
+  "/corporate-partners": {
+    "title": "Corporate Partners | Gifted Dreamers",
+    "description": "Partner with Gifted Dreamers to support community infrastructure that lasts: sponsorships, in-kind tools, and employee giving."
+  },
+  "/common-cloud": {
+    "title": "Common Cloud Learning Community | Gifted Dreamers",
+    "description": "Common Cloud is a free learning community from Gifted Dreamers. Free knowledge, real community, no gatekeeping."
+  },
+  "/about": {
+    "title": "About Kristine Socall & Gifted Dreamers",
+    "description": "25 years of cleaning up financial messes. Now teaching nonprofits to access the tools Fortune 500 companies use, free or deeply discounted."
+  },
+  "/matching-gifts": {
+    "title": "Matching Gifts: Double Your Impact | Gifted Dreamers",
+    "description": "Many employers match employee donations. Check if your gift to Gifted Dreamers can be doubled or tripled at no extra cost to you."
+  },
+  "/privacy": {
+    "title": "Privacy Policy | Gifted Dreamers",
+    "description": "How Gifted Dreamers collects, uses, and protects your information, including cookies, analytics consent, and your choices."
+  },
+  "/terms": {
+    "title": "Terms of Service | Gifted Dreamers",
+    "description": "The terms that apply when you use the Gifted Dreamers website and services."
+  }
+}
